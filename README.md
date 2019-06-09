@@ -17,8 +17,8 @@ file /opt/isodump/samples/PO#20190705.IMG<br />
 
 Before you can use the script you will need to install the python library [isoparser] by Barney Gale (https://github.com/barneygale/isoparser).
 
-sudo -H pip install six
-sudo -H pip install isoparser
+sudo -H pip install six<br />
+sudo -H pip install isoparser<br />
 
 Tested on macOS 10.14.5
 
@@ -31,16 +31,16 @@ usage: isodump.py -i <file> [options]
 ISO dump utility
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -d, --dump            dump file (default: item 0 to stdout)
-  -i ISO, --iso ISO     iso file to analyze
-  -l, --list            List all files from root directory (csv output)
-  -M, --metadata        Print metadata
-  -o [OUT], --out [OUT]
-                        output folder (default: current working directory)
-  -s [SELECT], --select [SELECT]
-                        select item nr for dumping (a for all)
-  --version             show program's version number and exit
+  -h, --help            show this help message and exit<br />
+  -d, --dump            dump file (default: item 0 to stdout)<br />
+  -i ISO, --iso ISO     iso file to analyze<br />
+  -l, --list            List all files from root directory (csv output)<br />
+  -M, --metadata        Print metadata<br />
+  -o [OUT], --out [OUT]<br />
+                        output folder (default: current working directory)<br />
+  -s [SELECT], --select [SELECT]<br />
+                        select item nr for dumping (a for all)<br />
+  --version             show program's version number and exit<br />
 
 ## Quick Start
 
