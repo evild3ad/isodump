@@ -131,3 +131,10 @@ python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | xxd | head
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | file -
 /dev/stdin: PE32 executable (GUI) Intel 80386, for MS Windows, UPX compressed
 ```
+
+## License
+isodump - ISO dump utility Copyright (c) 2019 Martin Willing
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
