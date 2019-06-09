@@ -15,7 +15,7 @@ file /opt/isodump/samples/PO#20190705.IMG<br />
 
 ## Dependencies
 
-Before you can use the script you will need to install the python library [isoparser](https://github.com/barneygale/isoparser) by Barney Gale.
+Before you can use the script you will need to install the python library [isoparser](https://github.com/barneygale/isoparser){:target="_blank"} by Barney Gale.
 
 ```
 sudo -H pip install six
