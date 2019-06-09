@@ -14,6 +14,7 @@ file /opt/isodump/samples/Test.dmg<br />
 file /opt/isodump/samples/PO#20190705.IMG<br />
 /opt/isodump/samples/PO#20190705.IMG: UDF filesystem data (version 1.5) 'PICTURES'
 ```
+**Warning:** The directory `samples` contains real malware!
 
 ## Dependencies
 
