@@ -46,13 +46,13 @@ optional arguments:
 
 * List all files from root directory (csv output)
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -l
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -l<br />
 Index;Name;Size;Header;MD5;SHA256
 0;INVOICE_.EXE;1325568;4d5a9000030000000400;208cd564304ef7fe98a0c3da095fec3b;b3aef0e1d7a71edbc858a81e66f354be1974aafdd4449f2972e4dae1c82f2b8a
 1;PAYMENT SLIP AND BANK CONF.EXE;709632;4d5a5000020000000400;eccd7c33037181277ae23f3c3b5baf74;84b73d9bc64da09072ebba537418a35c4883daba40fa7b348080fa10b1dfeb41
 2;PO_20190.EXE;610816;4d5a9000030000000400;663ece11cb6b12d23266884d7b89e47a;2d8f0de8c52452cc12e8d4f993f0aad60457c3cd396632546da0f501b066ff3f
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -l | column -s ";" -t
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -l | column -s ";" -t<br />
 Index  Name                            Size     Header                MD5                               SHA256
 0      INVOICE_.EXE                    1325568  4d5a9000030000000400  208cd564304ef7fe98a0c3da095fec3b  b3aef0e1d7a71edbc858a81e66f354be1974aafdd4449f2972e4dae1c82f2b8a
 1      PAYMENT SLIP AND BANK CONF.EXE  709632   4d5a5000020000000400  eccd7c33037181277ae23f3c3b5baf74  84b73d9bc64da09072ebba537418a35c4883daba40fa7b348080fa10b1dfeb41
@@ -60,7 +60,7 @@ Index  Name                            Size     Header                MD5       
 
 * Print metadata of iso file
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -M
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -M<br />
 
 volume name = TEST<br />
 volume block count = 1839<br />
@@ -92,7 +92,7 @@ PE32 executable (GUI) Intel 80386, for MS Windows, UPX compressed
 
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | python tools/pecheck/pecheck.py | less
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 | xxd | head
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 | xxd | head<br />
 00000000: 4d5a 5000 0200 0000 0400 0f00 ffff 0000  MZP.............
 00000010: b800 0000 0000 0000 4000 1a00 0000 0000  ........@.......
 00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
@@ -104,7 +104,7 @@ python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 | xxd | head
 00000080: 0000 0000 0000 0000 0000 0000 0000 0000  ................
 00000090: 0000 0000 0000 0000 0000 0000 0000 0000  ................
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | xxd | head
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | xxd | head<br />
 00000000: 4d5a 9000 0300 0000 0400 0000 ffff 0000  MZ..............
 00000010: b800 0000 0000 0000 4000 0000 0000 0000  ........@.......
 00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
@@ -116,5 +116,5 @@ python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | xxd | head
 00000080: 1673 9292 5212 fcc1 5212 fcc1 5212 fcc1  .s..R...R...R...
 00000090: 1443 1dc1 5012 fcc1 ccb2 3bc1 5312 fcc1  .C..P.....;.S...
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | file -
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | file -<br />
 /dev/stdin: PE32 executable (GUI) Intel 80386, for MS Windows, UPX compressed
