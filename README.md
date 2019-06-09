@@ -78,43 +78,43 @@ python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s a -o /Users/evild3ad/D
 
 * Extract specific file from root directory
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 -o /Users/evild3ad/Desktop/dump/
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 -o /Users/evild3ad/Desktop/dump/ <br />
 
 * Pipe file into other tools (default: item 0 to stdout)
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/file-magic/file-magic.py
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/pecheck/pecheck.py | less
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/file-magic/file-magic.py <br />
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/pecheck/pecheck.py | less <br />
 
 * Pipe specific file into other tools
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | python tools/file-magic/file-magic.py 
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | python tools/file-magic/file-magic.py <br />
 PE32 executable (GUI) Intel 80386, for MS Windows, UPX compressed
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | python tools/pecheck/pecheck.py | less
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | python tools/pecheck/pecheck.py | less <br />
 
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 | xxd | head<br />
-00000000: 4d5a 5000 0200 0000 0400 0f00 ffff 0000  MZP.............
-00000010: b800 0000 0000 0000 4000 1a00 0000 0000  ........@.......
-00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
-00000030: 0000 0000 0000 0000 0000 0000 0001 0000  ................
-00000040: ba10 000e 1fb4 09cd 21b8 014c cd21 9090  ........!..L.!..
-00000050: 5468 6973 2070 726f 6772 616d 206d 7573  This program mus
-00000060: 7420 6265 2072 756e 2075 6e64 6572 2057  t be run under W
-00000070: 696e 3332 0d0a 2437 0000 0000 0000 0000  in32..$7........
-00000080: 0000 0000 0000 0000 0000 0000 0000 0000  ................
-00000090: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000000: 4d5a 5000 0200 0000 0400 0f00 ffff 0000  MZP.............<br />
+00000010: b800 0000 0000 0000 4000 1a00 0000 0000  ........@.......<br />
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................<br />
+00000030: 0000 0000 0000 0000 0000 0000 0001 0000  ................<br />
+00000040: ba10 000e 1fb4 09cd 21b8 014c cd21 9090  ........!..L.!..<br />
+00000050: 5468 6973 2070 726f 6772 616d 206d 7573  This program mus<br />
+00000060: 7420 6265 2072 756e 2075 6e64 6572 2057  t be run under W<br />
+00000070: 696e 3332 0d0a 2437 0000 0000 0000 0000  in32..$7........<br />
+00000080: 0000 0000 0000 0000 0000 0000 0000 0000  ................<br />
+00000090: 0000 0000 0000 0000 0000 0000 0000 0000  ................<br />
 
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | xxd | head<br />
-00000000: 4d5a 9000 0300 0000 0400 0000 ffff 0000  MZ..............
-00000010: b800 0000 0000 0000 4000 0000 0000 0000  ........@.......
-00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
-00000030: 0000 0000 0000 0000 0000 0000 1001 0000  ................
-00000040: 0e1f ba0e 00b4 09cd 21b8 014c cd21 5468  ........!..L.!Th
-00000050: 6973 2070 726f 6772 616d 2063 616e 6e6f  is program canno
-00000060: 7420 6265 2072 756e 2069 6e20 444f 5320  t be run in DOS 
-00000070: 6d6f 6465 2e0d 0d0a 2400 0000 0000 0000  mode....$.......
-00000080: 1673 9292 5212 fcc1 5212 fcc1 5212 fcc1  .s..R...R...R...
-00000090: 1443 1dc1 5012 fcc1 ccb2 3bc1 5312 fcc1  .C..P.....;.S...
+00000000: 4d5a 9000 0300 0000 0400 0000 ffff 0000  MZ..............<br />
+00000010: b800 0000 0000 0000 4000 0000 0000 0000  ........@.......<br />
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................<br />
+00000030: 0000 0000 0000 0000 0000 0000 1001 0000  ................<br />
+00000040: 0e1f ba0e 00b4 09cd 21b8 014c cd21 5468  ........!..L.!Th<br />
+00000050: 6973 2070 726f 6772 616d 2063 616e 6e6f  is program canno<br />
+00000060: 7420 6265 2072 756e 2069 6e20 444f 5320  t be run in DOS <br />
+00000070: 6d6f 6465 2e0d 0d0a 2400 0000 0000 0000  mode....$.......<br />
+00000080: 1673 9292 5212 fcc1 5212 fcc1 5212 fcc1  .s..R...R...R...<br />
+00000090: 1443 1dc1 5012 fcc1 ccb2 3bc1 5312 fcc1  .C..P.....;.S...<br />
 
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 2 | file -<br />
 /dev/stdin: PE32 executable (GUI) Intel 80386, for MS Windows, UPX compressed
