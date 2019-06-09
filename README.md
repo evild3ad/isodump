@@ -8,10 +8,10 @@ The following file systems are supported:
 * [Universal Disk Format](https://en.wikipedia.org/wiki/Universal_Disk_Format) (UDF)
 
 ```
-file /opt/isodump/samples/Test.dmg<br />
+file /opt/isodump/samples/Test.dmg
 /opt/isodump/samples/Test.dmg: ISO 9660 CD-ROM filesystem data 'TEST'
 
-file /opt/isodump/samples/PO#20190705.IMG<br />
+file /opt/isodump/samples/PO#20190705.IMG
 /opt/isodump/samples/PO#20190705.IMG: UDF filesystem data (version 1.5) 'PICTURES'
 ```
 **Warning:** The directory `samples` contains real malware!
