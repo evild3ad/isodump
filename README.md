@@ -62,15 +62,15 @@ Index  Name                            Size     Header                MD5       
 
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -M
 
-volume name = TEST
-volume block count = 1839
-volume block size = 2048
-voulme size = 3766272
-volume set name = 
-volume software = 
-volume create root dir = 2019-05-13 16:10:36
-volume create volume = 2019051314120000
-volume modify = 2019051314120000
+volume name = TEST<br />
+volume block count = 1839<br />
+volume block size = 2048<br />
+voulme size = 3766272<br />
+volume set name = <br />
+volume software = <br />
+volume create root dir = 2019-05-13 16:10:36<br />
+volume create volume = 2019051314120000<br />
+volume modify = 2019051314120000<br />
 
 * Extract all files from root directory
 
