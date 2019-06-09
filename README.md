@@ -13,7 +13,7 @@ file /opt/isodump/samples/Test.dmg<br />
 file /opt/isodump/samples/PO#20190705.IMG<br />
 /opt/isodump/samples/PO#20190705.IMG: UDF filesystem data (version 1.5) 'PICTURES'<br />
 
-##Dependencies
+## Dependencies
 
 Before you can use the script you will need to install the python library [isoparser] by Barney Gale (https://github.com/barneygale/isoparser).
 
@@ -22,7 +22,7 @@ sudo -H pip install isoparser
 
 Tested on macOS 10.14.5
 
-##Usage
+## Usage
 
 python3 isodump.py -h
 
@@ -42,7 +42,7 @@ optional arguments:
                         select item nr for dumping (a for all)
   --version             show program's version number and exit
 
-##Quick Start
+## Quick Start
 
 * List all files from root directory (csv output)
 
