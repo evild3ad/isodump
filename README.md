@@ -60,30 +60,38 @@ Index  Name                            Size     Header                MD5       
 
 * Print metadata of iso file
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -M<br />
+```
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -M
 
-volume name = TEST<br />
-volume block count = 1839<br />
-volume block size = 2048<br />
-voulme size = 3766272<br />
-volume set name = <br />
-volume software = <br />
-volume create root dir = 2019-05-13 16:10:36<br />
-volume create volume = 2019051314120000<br />
-volume modify = 2019051314120000<br />
+volume name = TEST
+volume block count = 1839
+volume block size = 2048
+voulme size = 3766272
+volume set name = 
+volume software = 
+volume create root dir = 2019-05-13 16:10:36
+volume create volume = 2019051314120000
+volume modify = 2019051314120000
+```
 
 * Extract all files from root directory
 
+```
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s a -o /Users/evild3ad/Desktop/dump/
+```
 
 * Extract specific file from root directory
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 -o /Users/evild3ad/Desktop/dump/ <br />
+```
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s 1 -o /Users/evild3ad/Desktop/dump/
 
+```
 * Pipe file into other tools (default: item 0 to stdout)
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/file-magic/file-magic.py <br />
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/pecheck/pecheck.py | less <br />
+```
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/file-magic/file-magic.py
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -d | python tools/pecheck/pecheck.py | less
+```
 
 * Pipe specific file into other tools
 
