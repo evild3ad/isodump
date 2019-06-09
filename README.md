@@ -15,11 +15,13 @@ file /opt/isodump/samples/PO#20190705.IMG<br />
 
 ## Dependencies
 
-Before you can use the script you will need to install the python library [isoparser] by Barney Gale (https://github.com/barneygale/isoparser).
+Before you can use the script you will need to install the python library [isoparser](https://github.com/barneygale/isoparser) by Barney Gale.
+
 ```
 sudo -H pip install six
 sudo -H pip install isoparser
 ```
+
 Tested on macOS 10.14.5
 
 ## Usage
