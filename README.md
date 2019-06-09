@@ -16,14 +16,15 @@ file /opt/isodump/samples/PO#20190705.IMG<br />
 ## Dependencies
 
 Before you can use the script you will need to install the python library [isoparser] by Barney Gale (https://github.com/barneygale/isoparser).
-
-sudo -H pip install six<br />
-sudo -H pip install isoparser<br />
+```
+sudo -H pip install six
+sudo -H pip install isoparser
+```
 
 Tested on macOS 10.14.5
 
 ## Usage
-
+```
 python3 isodump.py -h
 
 usage: isodump.py -i <file> [options]
@@ -31,32 +32,34 @@ usage: isodump.py -i <file> [options]
 ISO dump utility
 
 optional arguments:
-  -h, --help            show this help message and exit<br />
-  -d, --dump            dump file (default: item 0 to stdout)<br />
-  -i ISO, --iso ISO     iso file to analyze<br />
-  -l, --list            List all files from root directory (csv output)<br />
-  -M, --metadata        Print metadata<br />
-  -o [OUT], --out [OUT]<br />
-                        output folder (default: current working directory)<br />
-  -s [SELECT], --select [SELECT]<br />
-                        select item nr for dumping (a for all)<br />
-  --version             show program's version number and exit<br />
+  -h, --help            show this help message and exit
+  -d, --dump            dump file (default: item 0 to stdout)
+  -i ISO, --iso ISO     iso file to analyze
+  -l, --list            List all files from root directory (csv output)
+  -M, --metadata        Print metadata
+  -o [OUT], --out [OUT]
+                        output folder (default: current working directory)
+  -s [SELECT], --select [SELECT]
+                        select item nr for dumping (a for all)
+  --version             show program's version number and exit
+```
 
 ## Quick Start
 
 * List all files from root directory (csv output)
-
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -l<br />
+```
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -l
 Index;Name;Size;Header;MD5;SHA256
 0;INVOICE_.EXE;1325568;4d5a9000030000000400;208cd564304ef7fe98a0c3da095fec3b;b3aef0e1d7a71edbc858a81e66f354be1974aafdd4449f2972e4dae1c82f2b8a
 1;PAYMENT SLIP AND BANK CONF.EXE;709632;4d5a5000020000000400;eccd7c33037181277ae23f3c3b5baf74;84b73d9bc64da09072ebba537418a35c4883daba40fa7b348080fa10b1dfeb41
 2;PO_20190.EXE;610816;4d5a9000030000000400;663ece11cb6b12d23266884d7b89e47a;2d8f0de8c52452cc12e8d4f993f0aad60457c3cd396632546da0f501b066ff3f
 
-python3 isodump.py -i /opt/isodump/samples/Test.dmg -l | column -s ";" -t<br />
+python3 isodump.py -i /opt/isodump/samples/Test.dmg -l | column -s ";" -t
 Index  Name                            Size     Header                MD5                               SHA256
 0      INVOICE_.EXE                    1325568  4d5a9000030000000400  208cd564304ef7fe98a0c3da095fec3b  b3aef0e1d7a71edbc858a81e66f354be1974aafdd4449f2972e4dae1c82f2b8a
 1      PAYMENT SLIP AND BANK CONF.EXE  709632   4d5a5000020000000400  eccd7c33037181277ae23f3c3b5baf74  84b73d9bc64da09072ebba537418a35c4883daba40fa7b348080fa10b1dfeb41
 2      PO_20190.EXE                    610816   4d5a9000030000000400  663ece11cb6b12d23266884d7b89e47a  2d8f0de8c52452cc12e8d4f993f0aad60457c3cd396632546da0f501b066ff3f
+```
 
 * Print metadata of iso file
 
@@ -75,7 +78,6 @@ volume modify = 2019051314120000
 ```
 
 * Extract all files from root directory
-
 ```
 python3 isodump.py -i /opt/isodump/samples/Test.dmg -d -s a -o /Users/evild3ad/Desktop/dump/
 ```
