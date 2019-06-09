@@ -7,11 +7,13 @@ The following file systems are supported:
 * [ISO 9660](https://en.wikipedia.org/wiki/ISO_9660)
 * [Universal Disk Format](https://en.wikipedia.org/wiki/Universal_Disk_Format) (UDF)
 
+```
 file /opt/isodump/samples/Test.dmg<br />
 /opt/isodump/samples/Test.dmg: ISO 9660 CD-ROM filesystem data 'TEST'<br />
 
 file /opt/isodump/samples/PO#20190705.IMG<br />
 /opt/isodump/samples/PO#20190705.IMG: UDF filesystem data (version 1.5) 'PICTURES'<br />
+```
 
 ## Dependencies
 
